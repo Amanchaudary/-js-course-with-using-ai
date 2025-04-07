@@ -1,4 +1,4 @@
-// loops for, while and dowhile loop or iterators
+// 3types ofloops,  for, while and dowhile loop or iterators
 //  1 for loop yo chai blockscope ma kam garxa  so same variable {} vitra banauna milxa
 // tutorial
 // For loop with break and continue in javascript | chai aur #javascript
