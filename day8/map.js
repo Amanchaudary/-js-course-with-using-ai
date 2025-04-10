@@ -22,4 +22,14 @@ console.log(newNum2);
 
 // 3 reduce method 
 console.log("reduce method in array");
-// 25.40 sec
+const mynums=[1,2,3]
+ const mytotal=mynums.reduce(function(acc,currval){
+    console.log(`acc: ${acc} and currval: ${currval}`);
+    return acc+currval
+},0)
+
+console.log(mytotal);
+// another method by arrow function
+console.log("another method of reduce method");
+const mytotal1=mynums.reduce((acc,curr)=>acc+curr,0)
+console.log(mytotal1);
