@@ -20,6 +20,18 @@ init()
 // console.log(name);
 
 
-// closer in js
+// closer in js==> 14.25 sec
 console.log("learn about closer");
-// 14:25sec
+
+// return key le garda sabai scope janxa ==> outer and innner both janxa
+function makefunc(){
+    const name="mozilla"
+    function displayName(){
+        console.log(name);
+    }
+    return displayName
+}
+const myFunc=makefunc();
+myFunc()
+
+
