@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="one">heading1</h2>
+    <h2 id="two">heading2</h2>
+    <h2 id="three">heading3</h2>
+    <button id="btn">Click</button>
+</body>
+<script>
+    let heading1=document.getElementById('one')
+    let heading2=document.getElementById('two')
+    let heading3=document.getElementById('three')
+    let btn=document.getElementById('btn')
+    btn.addEventListener('click',()=>{
+        setTimeout(()=>{
+            heading1.style.color='red'
+            setTimeout(()=>{
+                heading2.style.color='green'
+                setTimeout(()=>{
+                    heading3.style.color='blue'
+                },1000)
+            },1000)
+        },1000)
+    })
+</script>
+</html>
